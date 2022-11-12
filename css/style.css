@@ -1,0 +1,177 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+}
+
+body {
+  background-image: url('../img/background-1.jpg');
+  background-repeat: repeat-y;
+  background-color: #9FFE00;
+  font-family: sans-serif;
+}
+
+.container {
+  max-width: 1300px;
+  padding: 0 25px;
+  margin: 0 auto;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(4, 25%);
+  background-color: #fff;
+  padding: 10px 50px;
+  grid-column-gap: 25px;
+  grid-row-gap: 15px;
+  justify-content: center;
+  position: relative;
+  top: 100px;
+}
+
+.two {
+  grid-area: 2/1/3/2;
+}
+
+.four {
+  grid-area: 2/2/3/3;
+}
+
+.six {
+  grid-area: 2/3/3/4;
+}
+
+.eight {
+  grid-area: 2/4/3/5;
+}
+
+.card-desc h2 {
+  text-transform: capitalize;
+  color: #70941e;
+  text-align: center;
+  margin: 15px 0;
+}
+
+.card-desc p {
+  font-weight: 500;
+  font-size: 1.2em;
+  text-align: center;
+  padding: 30px 20px;
+  padding-top: 0;
+}
+
+.card-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+@media (max-width:1000px) {
+  .container {
+    max-width: 950px;
+    padding: 0 25px;
+  }
+
+  .cards {
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    grid-column-gap: 15px;
+    grid-row-gap: 20px;
+    padding: 15px 15px;
+    border-bottom: 15px solid #000000ca;
+    margin: 50px auto;
+    top: 0;
+  }
+
+  .card-desc {
+    padding: 10px 25px;
+    margin-top: 30px;
+    font-size: 17px;
+  }
+
+  .two {
+    grid-area: 1/1/2/2;
+  }
+
+  .four {
+    grid-area: 2/2/3/3;
+  }
+
+  .six {
+    grid-area: 3/1/4/2;
+  }
+
+  .eight {
+    grid-area: 4/2/5/3;
+  }
+}
+
+@media (max-width:900px) {
+  .container {
+    max-width: 800px;
+    padding: 0 25px;
+  }
+
+  .cards {
+    margin: 50px auto;
+  }
+
+  .card-desc {
+    padding: 10px 15px;
+    margin-top: 15px;
+  }
+}
+
+@media (max-width:730px) {
+  .container {
+    max-width: 650px;
+    padding: 0 25px;
+  }
+
+  .cards {
+    grid-template-columns: repeat(1, 100%);
+    border-bottom: 8px solid #000000ca;
+    border-top: 8px solid #000000ca;
+    top: 0;
+    margin: 50px auto;
+    grid-column-gap: 0px;
+    grid-row-gap: 20px;
+
+  }
+
+  .cards p {
+    padding: 0 15px;
+    padding-bottom: 30px;
+    font-size: 20px;
+  }
+
+  .card-desc {
+    padding: 30px 25px;
+    padding-top: 0;
+  }
+
+  .card-desc h2 {
+    font-size: 32px;
+  }
+
+  .two {
+    grid-area: 2/1/3/2;
+    border-bottom: 15px solid #000000ca;
+  }
+
+  .four {
+    grid-area: 4/1/5/2;
+    border-bottom: 15px solid #000000ca;
+  }
+
+  .six {
+    grid-area: 6/1/7/2;
+    border-bottom: 15px solid #000000ca;
+  }
+
+  .eight {
+    grid-area: 8/1/9/2;
+  }
+
+}
